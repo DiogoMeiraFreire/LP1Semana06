@@ -17,5 +17,10 @@ namespace ColorSpheres
             radius = r;
             nTimesThrown = 0;
         }
+
+        public void Pop()
+        {
+            radius = 0;
+        }
     }
 }
