@@ -7,47 +7,68 @@ namespace BetterColorSpheres
 {
     public class Color
     {
-        private readonly byte red, green, blue, alpha;
+        private byte red, green, blue, alpha;
 
         public Color(byte red, byte green, byte blue, byte alpha)
         {
-            red = GetRed();
-            green = GetGreen();
-            blue = GetBlue();
-            alpha = GetAlpha();
+            red = GetRed;
+            green = GetGreen;
+            blue = GetBlue;
+            alpha = GetAlpha;
         }
 
         public Color(byte red, byte green, byte blue)
         {
-            red = GetRed();
-            green = GetGreen();
-            blue = GetBlue();
+            red = GetRed;
+            green = GetGreen;
+            blue = GetBlue;
             alpha = 255;
         }
 
-        private byte GetRed()
+       public byte GetRed
         {
-            return red;
+            get => red;
+
+            private set 
+            {
+                red = value;
+            } 
         }
 
-        private byte GetGreen()
+
+        public byte GetGreen
         {
-            return green;
+            get => green;
+
+            private set 
+            {
+                green = value;
+            } 
         }
 
-        private byte GetBlue()
+        public byte GetBlue
         {
-            return blue;
+            get => blue;
+
+            private set 
+            {
+                blue = value;
+            } 
         }
 
-        private byte GetAlpha()
+        public byte GetAlpha
         {
-            return alpha;
-        }
+            get => alpha;
 
-        private byte GetGrey()
+            private set 
+            {
+                alpha = value;
+            } 
+        }
+       
+        public byte GetGrey
         {
-            return (byte)((red + green + blue) / 3);
+            get => (byte)((red + green + blue) / 3);
         }
     }
 }
