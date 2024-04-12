@@ -31,6 +31,9 @@ namespace ColorSpheres
             }
         }
 
-        
+        public int GetTimesThrown()
+        {
+            return nTimesThrown;
+        }
     }
 }
