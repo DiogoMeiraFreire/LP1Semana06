@@ -7,6 +7,15 @@ namespace ColorSpheres
 {
     public class Sphere
     {
-        
+        private Color color;
+        private float radius;
+        private int nTimesThrown;
+
+        public Sphere(Color c, float r)
+        {
+            color = c;
+            radius = r;
+            nTimesThrown = 0;
+        }
     }
 }
