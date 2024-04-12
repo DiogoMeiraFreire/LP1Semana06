@@ -22,5 +22,15 @@ namespace ColorSpheres
         {
             radius = 0;
         }
+
+        public void Throw()
+        {
+            if(radius > 0)
+            {
+                nTimesThrown += 1;
+            }
+        }
+
+        
     }
 }
