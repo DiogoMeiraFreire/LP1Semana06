@@ -7,6 +7,16 @@ namespace ColorSpheres
 {
     public class Color
     {
+        private byte red, green, blue, alpha;
+
+        private Color(byte red, byte green, byte blue, byte alpha)
+        {
+            red = SetRed(r);
+            green = SetGreen(g);
+            blue = SetBlue(b);
+            alpha = SetAlpha(alpha);
+        }
+
         
     }
 }
