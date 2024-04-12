@@ -29,11 +29,11 @@ namespace ColorSpheres
             sphere3.Throw();
 
 
-            Console.WriteLine($"Times sphere number 1 was thrown: {sphere1.GetTimesThrown()}");
+            Console.WriteLine($"Times sphere number 1 ({color1}) was thrown: {sphere1.GetTimesThrown()}");
 
-            Console.WriteLine($"Times sphere number 2 was thrown: {sphere2.GetTimesThrown()}");
+            Console.WriteLine($"Times sphere number 2 ({color2}) was thrown: {sphere2.GetTimesThrown()}");
 
-            Console.WriteLine($"Times sphere number 3 was thrown: {sphere3.GetTimesThrown()}");
+            Console.WriteLine($"Times sphere number 3 ({color3}) was thrown: {sphere3.GetTimesThrown()}");
         }
     }
 }
