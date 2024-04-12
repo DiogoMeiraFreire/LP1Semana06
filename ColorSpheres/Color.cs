@@ -17,6 +17,12 @@ namespace ColorSpheres
             alpha = SetAlpha(alpha);
         }
 
-        
+        private Color(byte red, byte green, byte blue)
+        {
+            red = SetRed(r);
+            green = SetGreen(g);
+            blue = SetBlue(b);
+            alpha = 255;
+        }
     }
 }
