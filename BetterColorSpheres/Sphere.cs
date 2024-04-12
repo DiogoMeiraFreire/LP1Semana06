@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ColorSpheres
+namespace BetterColorSpheres
 {
-    public class BetterColorSpheres
+    public class Sphere
     {
         private readonly Color color;
         private float radius;
